@@ -32,6 +32,7 @@ Gem::Specification.new do |s|
   s.add_dependency "activemerchant", "~> 1.48", "!= 1.58.0", "!= 1.59.0"
 
   s.add_development_dependency "braintree", "~> 2.0"
+  s.add_development_dependency "shopify_api", "~> 4.0"
   s.add_development_dependency "rspec-rails", "~> 3.2"
   s.add_development_dependency "simplecov"
   s.add_development_dependency "sqlite3"
