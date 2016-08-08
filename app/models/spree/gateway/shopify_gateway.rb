@@ -14,11 +14,8 @@ module Spree
       if BigDecimal.new(money.to_s) == (transaction.amount * 100)
         full_refund_on_shopify(refund, transaction)
       elsif BigDecimal.new(money.to_s) < (transaction.amount * 100)
-        # Partial refund
-        binding.pry
+        raise NotImplementedError
       else
-        # HUHO!
-        binding.pry
         raise NotImplementedError
       end
     end
