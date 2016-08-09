@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.version     = SolidusGateway::VERSION
   s.summary     = "Additional Payment Gateways for Solidus"
   s.description = s.summary
-  s.required_ruby_version = ">= 2.1"
+  s.required_ruby_version = ">= 2.3"
 
   s.author       = "Solidus Team"
   s.email        = "contact@solidus.io"

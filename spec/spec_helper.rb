@@ -16,7 +16,6 @@ Capybara.javascript_driver = :poltergeist
 
 require "database_cleaner"
 require "braintree"
-require "shopify_api"
 require "ffaker"
 
 require "spree/testing_support/factories"
