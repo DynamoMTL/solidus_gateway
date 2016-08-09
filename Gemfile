@@ -7,7 +7,7 @@ gem "solidus", github: "solidusio/solidus", branch: branch
 # to the stripe gateway.
 #
 # This was resolved in v1.60, but we still need to skip 1.58 & 1.59.
-gem "activemerchant", "~> 1.48", "!= 1.58.0", "!= 1.59.0", github: "dynamomtl/active_merchant", branch: 'master'
+gem "activemerchant", "~> 1.48", "!= 1.58.0", "!= 1.59.0", github: "dynamomtl/active_merchant_new", branch: 'feature/shopify/prototype-implementation'
 
 group :development, :test do
   gem "pry-rails"
