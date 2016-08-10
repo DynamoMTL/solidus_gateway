@@ -35,4 +35,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "capybara"
   s.add_development_dependency "poltergeist", "~> 1.9"
   s.add_development_dependency "database_cleaner", "1.2.0"
+
+  s.add_development_dependency "shopify_api", "~> 4.0"
+  # s.add_development_dependency "dotenv-rails"
 end

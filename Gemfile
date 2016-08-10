@@ -11,6 +11,7 @@ gem "activemerchant", "~> 1.48", "!= 1.58.0", "!= 1.59.0", github: "dynamomtl/ac
 
 group :development, :test do
   gem "pry-rails"
+  gem "dotenv-rails", require: 'dotenv/rails-now'
 end
 
 gem 'pg'

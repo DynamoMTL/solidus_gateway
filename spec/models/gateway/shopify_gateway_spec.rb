@@ -9,6 +9,9 @@ describe Spree::Gateway::ShopifyGateway do
   let(:provider_class) { ActiveMerchant::Billing::ShopifyGateway }
 
   before do
+    subject.preferences = { api_key: ENV['SHOPIFY_API_KEY'],
+                            password: ENV['SHOPIFY_PASSWORD'],
+                            shop_name: ENV['SHOPIFY_SHOP_NAME'] }
     allow(refund).to receive(:pos_order_id).and_return(pos_order_id)
   end
 
