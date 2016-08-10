@@ -24,8 +24,22 @@ module Spree
     end
 
     def cancel(_transaction_id)
-      # NOTE(cab): I am unsure how we can achieve that, since we are required
-      # to have the order_id in order to call the Shopify API.
+      raise NotImplementedError
+    end
+
+    def purchase(_money, _creditcard, _gateway_options)
+      raise NotImplementedError
+    end
+
+    def authorize(_money, _creditcard, _gateway_options)
+      raise NotImplementedError
+    end
+
+    def capture(_money, _response_code, _gateway_options)
+      raise NotImplementedError
+    end
+
+    def create_profile(_payment)
       raise NotImplementedError
     end
   end
