@@ -13,7 +13,9 @@ module Spree
     end
 
     def credit(money, transaction_id, gateway_options)
-      provider.refund(money, transaction_id, gateway_options)
+      refund = gateway_options[:originator]
+      options = { order_id: refund.pos_order_id, reason: refund.reason.name }
+      provider.refund(money, transaction_id, options)
     end
 
     def void(transaction_id, gateway_options)
