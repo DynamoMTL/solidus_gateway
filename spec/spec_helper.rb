@@ -17,6 +17,7 @@ Capybara.javascript_driver = :poltergeist
 require "database_cleaner"
 require "braintree"
 require "ffaker"
+require "dotenv-rails"
 
 require "spree/testing_support/factories"
 require "spree/testing_support/order_walkthrough"

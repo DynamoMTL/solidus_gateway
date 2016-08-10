@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.version     = SolidusGateway::VERSION
   s.summary     = "Additional Payment Gateways for Solidus"
   s.description = s.summary
-  s.required_ruby_version = ">= 2.1"
+  s.required_ruby_version = ">= 2.3"
 
   s.author       = "Solidus Team"
   s.email        = "contact@solidus.io"
@@ -25,12 +25,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency "solidus_core", "~> 1.1"
 
-  # ActiveMerchant v1.58 through v1.59 introduced a breaking change
-  # to the stripe gateway.
-  #
-  # This was resolved in v1.60, but we still need to skip 1.58 & 1.59.
-  s.add_dependency "activemerchant", "~> 1.48", "!= 1.58.0", "!= 1.59.0"
-
   s.add_development_dependency "braintree", "~> 2.0"
   s.add_development_dependency "rspec-rails", "~> 3.2"
   s.add_development_dependency "simplecov"
@@ -41,4 +35,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "capybara"
   s.add_development_dependency "poltergeist", "~> 1.9"
   s.add_development_dependency "database_cleaner", "1.2.0"
+
+  s.add_development_dependency "shopify_api", "~> 4.0"
+  # s.add_development_dependency "dotenv-rails"
 end
